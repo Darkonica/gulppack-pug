@@ -42,9 +42,6 @@ Gulppack - сборка для автоматизации задач в повс
 
 Если вы всё сделали правильно, у вас должен открыться браузер с локальным сервером и работающим browser-sync. Теперь если вы внесёте изменения в файлы ```.pug```, ```.scss```, ```.js```, браузер сам перезагрузит веб-страницу, а Gulp заново соберёт ваш проект в папке ```dest```.
 
-## Bower?
-Вместо [Bower](https://bower.io/) используйте yarn или npm. Подробнее [тут](https://medium.com/netscape/bye-bye-bower-or-how-to-migrate-from-bower-to-npm-and-webpack-4eb2e1121a50).
-
 ***
 
 # Gulppack. Pug + SCSS version
@@ -92,6 +89,3 @@ Then using ```cmd``` in Windows or Terminal in Linux/macOS, please do the follow
 Your web browser will open with local server and running browser-sync. Now if you make changes to the
 files ```.pug```, ```.scss``` or ```.js```, your web browser will reload the web page itself, and Gulp
 will re-build your project in the ```dest``` folder.
-
-## Bower?
-Use yarn or npm instead of [Bower](https://bower.io/). See more [there](https://medium.com/netscape/bye-bye-bower-or-how-to-migrate-from-bower-to-npm-and-webpack-4eb2e1121a50).
