@@ -1,0 +1,3 @@
+function hui() {
+  return hui;
+}

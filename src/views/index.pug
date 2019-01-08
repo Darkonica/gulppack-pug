@@ -20,6 +20,7 @@ html(lang="ru")
 	body
 		.wrapper
 			.wrapper__subtitle
-				p Just make changes to the files <code>.pug</code>, <code>.scss</code> or <code>.js</code>. Your web browser will reload the web page itself and Gulp will re-build your project
+				each item in [1, 2, 3, 4, 5]
+					p= item
 			include blocks/icons.pug
 		script(src="../dest/js/main.min.js")
