@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+
+  @include block-paddings(desktop);
+
+  @include breakpoint(900px) {
+    top: 10px;
+  }
+
+  @include breakpoint(450px) {
+
+    @include block-paddings(mobile);
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 82px;
+    border: 1px solid red;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.nav {
+  flex-basis: 45%;
+
+  @include breakpoint(900px) {
+    flex-basis: 60%;
+  }
+
+  @include breakpoint(700px) {
+    flex-basis: 70%;
+  }
+
+  @include breakpoint(600px) {
+    display: none;
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+
+    a {
+      line-height: 24px;
+      font-size: 18px;
+      color: #000;
+      text-decoration: none;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      display: block;
+    }
+  }
+}

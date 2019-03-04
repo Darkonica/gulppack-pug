@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'Lato', sans-serif;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 35px;
+
+  @include breakpoint(700px) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_small {
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.body-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+.content {
+
+  &__block {
+    margin-bottom: 100px;
+
+    @include block-paddings(desktop);
+
+    @include breakpoint(450px) {
+
+      @include block-paddings(mobile);
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  &__title {
+
+    &_underlined {
+
+      &:after {
+        content: '';
+        display: block;
+        width: 55%;
+        margin-top: 5px;
+        border-bottom: 2px solid $main-color;
+      }
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $main-color;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.link-arrow {
+  color: $main-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 33px;
+    height: 10px;
+    margin-left: 25px;
+    background-image: url('/img/icons/arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
